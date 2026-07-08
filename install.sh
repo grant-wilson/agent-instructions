@@ -1,12 +1,3 @@
-# agent-instructions
-
-Claude skills and instructions for use in your projects.
-
-## Install
-
-Run this script from your project root to download `CLAUDE.md` and all skills into the current directory:
-
-```bash
 #!/usr/bin/env bash
 set -euo pipefail
 
@@ -31,11 +22,3 @@ for skill in "${SKILLS[@]}"; do
 done
 
 echo "Installed."
-```
-
-Or as a one-liner (requires `curl` and `bash`):
-
-```bash
-bash <(curl -fsSL https://raw.githubusercontent.com/grant-wilson/agent-instructions/main/install.sh)
-```
-
